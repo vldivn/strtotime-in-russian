@@ -1,0 +1,19 @@
+{
+    "name": "vldivn/strtotime-in-russian",
+    "description": "This package will allow you to get the date from the str in Russian.",
+    "authors": [
+        {
+            "name": "Vld Ivn",
+            "email": "vlad-ua95@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Vldivn": "src/"
+        }
+    }
+}
