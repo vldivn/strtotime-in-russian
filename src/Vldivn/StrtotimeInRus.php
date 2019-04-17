@@ -25,6 +25,19 @@ class StrtotimeInRus
         }
     }
 
+    public static function DateTime(string $dateStr)
+    {
+        $str = mb_strtolower($dateStr, 'UTF-8');
+
+        foreach (self::nativeMonth() as $key => $month) {
+            $str = str_replace(mb_strtolower($month, 'UTF-8'), $key, $str);
+        }
+
+        $date = new \DateTime();
+        $date->setTimestamp(strtotime($str));
+        return $date;
+    }
+
     private static function nativeMonth()
     {
         return [
